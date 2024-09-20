@@ -1,10 +1,10 @@
 #!/bin/sh
-# tezpay command reference
+# mavpay command reference
 
-rm -rf content/injected/tezpay/cmd/*
-mkdir -p content/injected/tezpay/cmd/
+rm -rf content/injected/mavpay/cmd/*
+mkdir -p content/injected/mavpay/cmd/
 export CWD=$PWD
-cd projects/tezpay/docs/cmd || exit 1
+cd projects/mavpay/docs/cmd || exit 1
 for f in *.md; do
 	echo "Processing $f file...";
 	(echo "---";
@@ -12,32 +12,32 @@ for f in *.md; do
 	echo "weight: 3";
 	echo "type: docs";
 	echo "---") | \
-	cat - "$f" > "$CWD/content/injected/tezpay/cmd/$f"
+	cat - "$f" > "$CWD/content/injected/mavpay/cmd/$f"
 done
 cd "$CWD" || exit 1
 
-# tezpay configuration samples
-rm -rf content/injected/tezpay/configuration/*
-mkdir -p content/injected/tezpay/configuration/
-cd projects/tezpay/docs/configuration || exit 1
+# mavpay configuration samples
+rm -rf content/injected/mavpay/configuration/*
+mkdir -p content/injected/mavpay/configuration/
+cd projects/mavpay/docs/configuration || exit 1
 for f in config.*.hjson; do
 	echo "Processing $f file...";
 	(echo "---";
 	echo "title: $(printf $f | cut -d. -f2)";
 	echo "weight: 3";
 	echo "type: docs";
-	echo "summary: tezpay $(printf $f | cut -d. -f2) configuration";
+	echo "summary: mavpay $(printf $f | cut -d. -f2) configuration";
 	echo "---";
 	echo '```yaml') | \
-	cat - "$f" > "$CWD/content/injected/tezpay/configuration/$(printf $f | cut -d. -f2).md"
-	(echo ''; echo '```') >> "$CWD/content/injected/tezpay/configuration/$(printf $f | cut -d. -f2).md"
+	cat - "$f" > "$CWD/content/injected/mavpay/configuration/$(printf $f | cut -d. -f2).md"
+	(echo ''; echo '```') >> "$CWD/content/injected/mavpay/configuration/$(printf $f | cut -d. -f2).md"
 done
 cd "$CWD" || exit 1
 
-# tezpay extensions samples
-rm -rf content/injected/tezpay/extensions/*
-mkdir -p content/injected/tezpay/extensions/
-cd projects/tezpay/docs/extensions || exit 1
+# mavpay extensions samples
+rm -rf content/injected/mavpay/extensions/*
+mkdir -p content/injected/mavpay/extensions/
+cd projects/mavpay/docs/extensions || exit 1
 for f in *.md; do
 	echo "Processing $f file...";
 	(echo "---";
@@ -45,15 +45,15 @@ for f in *.md; do
 	echo "weight: 3";
 	echo "type: docs";
 	echo "---") | \
-	cat - "$f" > "$CWD/content/injected/tezpay/extensions/$f"
+	cat - "$f" > "$CWD/content/injected/mavpay/extensions/$f"
 done
 cd "$CWD" || exit 1
 
-# tezbake command reference
+# mavbake command reference
 
-rm -rf content/injected/tezbake/cmd/*
-mkdir -p content/injected/tezbake/cmd/
-cd projects/tezbake/docs/cmd || exit 1
+rm -rf content/injected/mavbake/cmd/*
+mkdir -p content/injected/mavbake/cmd/
+cd projects/mavbake/docs/cmd || exit 1
 for f in *.md; do
 	echo "Processing $f file...";
 	(echo "---";
@@ -61,6 +61,6 @@ for f in *.md; do
 	echo "weight: 3";
 	echo "type: docs";
 	echo "---") | \
-	cat - "$f" > "$CWD/content/injected/tezbake/cmd/$f"
+	cat - "$f" > "$CWD/content/injected/mavbake/cmd/$f"
 done
 cd "$CWD" || exit 1
