@@ -9,7 +9,7 @@
 	branch = main
 
 [submodule "projects/tezpay"]
-	path = projects/tezpay
+	path = projects/mavpay
 	url = git@github.com:tez-capital/tezpay.git
 	branch = main
 
@@ -18,6 +18,6 @@
 	url = git@github.com:tez-capital/docs.tez.capital_content.git
 	branch = main
 [submodule "projects/tezbake"]
-	path = projects/tezbake
+	path = projects/mavbake
 	url = git@github.com:tez-capital/tezbake.git
 	branch = main
