@@ -5,19 +5,19 @@
 
 [submodule "public"]
 	path = public
-	url = git@github.com:tez-capital/docs.tez.capital.git
+	url = git@github.com:mavryk-network/bake.mavryk.network.git
 	branch = main
 
-[submodule "projects/tezpay"]
+[submodule "projects/mavpay"]
 	path = projects/mavpay
-	url = git@github.com:tez-capital/tezpay.git
+	url = git@github.com:mavryk-network/mavpay.git
 	branch = main
 
 [submodule "content"]
 	path = content
-	url = git@github.com:tez-capital/docs.tez.capital_content.git
+	url = git@github.com:mavryk-network/bake.mavryk.network_content.git
 	branch = main
-[submodule "projects/tezbake"]
+[submodule "projects/mavbake"]
 	path = projects/mavbake
-	url = git@github.com:tez-capital/tezbake.git
+	url = git@github.com:mavryk-network/mavbake.git
 	branch = main
