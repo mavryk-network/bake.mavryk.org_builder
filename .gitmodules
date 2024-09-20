@@ -5,7 +5,7 @@
 
 [submodule "public"]
 	path = public
-	url = git@github.com:mavryk-network/bake.mavryk.network.git
+	url = git@github.com:mavryk-network/bake.mavryk.org.git
 	branch = main
 
 [submodule "projects/mavpay"]
@@ -15,7 +15,7 @@
 
 [submodule "content"]
 	path = content
-	url = git@github.com:mavryk-network/bake.mavryk.network_content.git
+	url = git@github.com:mavryk-network/bake.mavryk.org_content.git
 	branch = main
 [submodule "projects/mavbake"]
 	path = projects/mavbake
