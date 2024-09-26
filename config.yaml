@@ -1,9 +1,9 @@
-# "https://docs.tez.capital/"
+# "https://bake.mavryk.org/"
 baseURL: /
 languageCode: "en-us"
-title: "docs.tez.capital"
+title: "bake.mavryk.org"
 sidebar_search_disable: false
-copyright: tez.capital
+copyright: "Mavryk Dynamics"
 
 enableMissingTranslationPlaceholders: true
 enableRobotsTXT: true
@@ -30,32 +30,28 @@ params:
   offlineSearchSummaryLength: 200
   offlineSearchMaxResults: 15
 
-  github_project_repo: https://github.com/tez-capital/docs.tez.capital
-  github_repo: https://github.com/tez-capital/docs.tez.capital_content
+  github_project_repo: https://github.com/mavryk-network/bake.mavryk.org
+  github_repo: https://github.com/mavryk-network/bake.mavryk.org_content
   github_branch: main
   path_base_for_github_subdir: "content"
 
   ui:
     feedback: # requires GA
       enable: false
-      yes: Glad to hear it! Please <a href="https://github.com/tez-capital/docs-tez-capital-builder/issues/new">tell us how we can improve</a>.
-      no: Sorry to hear that. Please <a href="https://github.com/tez-capital/docs-tez-capital-builder/issues/new">tell us how we can improve</a>.
+      yes: Glad to hear it! Please <a href="https://github.com/mavryk-network/bake-mavryk-org-builder/issues/new">tell us how we can improve</a>.
+      no: Sorry to hear that. Please <a href="https://github.com/mavryk-network/bake-mavryk-org-builder/issues/new">tell us how we can improve</a>.
     readingtime: 
       enable: false
 
   links:
     user:
-      - name: Discord
-        url: https://discord.gg/wDkPpMDFcn
-        icon: fab fa-discord
-
       - name: Twitter
-        url: https://twitter.com/TezCapital
+        url: https://twitter.com/MavrykDynamics
         icon: fab fa-twitter
 
     developer:
       - name: Github
-        url: https://github.com/tez-capital
+        url: https://github.com/mavryk-network
         icon: fab fa-github
         desc: Development takes place here!
 

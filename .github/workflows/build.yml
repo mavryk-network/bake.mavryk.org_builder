@@ -44,7 +44,7 @@ jobs:
 
       - name: cname
         run: |
-          printf docs.tez.capital > public/CNAME
+          printf bake.mavryk.org > public/CNAME
 
       - name: Get current date
         id: date
@@ -58,8 +58,8 @@ jobs:
           GITHUB_SHA: $GITHUB_SHA 
         with:
           source-directory: public/
-          destination-github-username: tez-capital
-          destination-repository-name: docs.tez.capital
+          destination-github-username: mavryk-network
+          destination-repository-name: bake.mavryk.org
           user-email: docs-builder@tez.capital
           commit-message: publish-${{ steps.date.outputs.date }}
 
