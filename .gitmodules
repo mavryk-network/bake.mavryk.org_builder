@@ -3,3 +3,19 @@
 	path = themes/docsy
 	url = https://github.com/google/docsy
 
+[submodule "content"]
+	path = content
+	url = git@github.com:mavryk-network/bake.mavryk.org_content.git
+	branch = main
+[submodule "public"]
+	path = public
+	url = git@github.com:mavryk-network/bake.mavryk.org.git
+	branch = main
+[submodule "projects/mavpay"]
+	path = projects/mavpay
+	url = git@github.com:mavryk-network/mavpay.git
+	branch = main
+[submodule "projects/mavbake"]
+	path = projects/mavbake
+	url = git@github.com:mavryk-network/mavbake.git
+	branch = main
