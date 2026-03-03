@@ -45,9 +45,9 @@ params:
 
   links:
     user:
-      - name: Twitter
-        url: https://twitter.com/MavrykDynamics
-        icon: fab fa-twitter
+      - name: X
+        url: https://x.com/MavrykDynamics
+        icon: fab fa-x-twitter
 
     developer:
       - name: Github
